@@ -16,7 +16,8 @@
 
 ## Contributing
 
-If you have experience in texturing, programming or MSFS Addon developpment please consider joining my Discord Server.
+If you have experience in texturing, programming or MSFS Addon developpment please consider joining my Discord Server:
+https://discord.gg/BtaCxfPw
 
 ## License Information
 
