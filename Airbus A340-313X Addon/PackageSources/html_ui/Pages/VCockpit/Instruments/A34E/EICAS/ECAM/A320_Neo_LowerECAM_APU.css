@@ -1,0 +1,85 @@
+:root {
+  --bodyHeightScale: 1;
+}
+
+@keyframes TemporaryShow {
+  0%, 100% {
+    visibility: visible;
+  }
+}
+@keyframes TemporaryHide {
+  0%, 100% {
+    visibility: hidden;
+  }
+}
+html {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+html body {
+  -webkit-user-select: none;
+  font-family: var(--font);
+  font-size: calc(var(--viewportHeightRatio) * (36px / 21.6) * var(--currentPageHeight) / 100 );
+  color: white;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#highlight {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#Electricity {
+  width: 100%;
+  height: 100%;
+}
+#Electricity[state=off] {
+  display: none;
+}
+:root {
+  --ecamDefaultColour: white;
+  --ecamUnitsColour: rgb(0, 150, 150);
+  --ecamValueColour: green;
+  --ecamWarningColour: rgb(219, 114, 0);
+  --ecamDangerColour: red;
+  --ecamInactiveColour: rgb(219, 114, 0);
+  --ecamSeparatorsColour: white;
+}
+:root .Separator {
+  stroke: #3c3c3c;
+  stroke-width: 4;
+  fill: none;
+}
+:root div {
+  font-family: Roboto-Bold;
+}
+:root text {
+  font-family: Roboto-Bold;
+}
+:root #PageTitle {
+  fill: var(--ecamDefaultColour);
+  font-size: 25px;
+  text-decoration: underline;
+}
+
+a320-neo-lower-ecam-apu {
+  display: block;
+  position: absolute;
+  top: -5%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+}
+a320-neo-lower-ecam-apu text {
+  text-anchor: middle;
+  alignment-baseline: central;
+}
+
+/*# sourceMappingURL=A320_Neo_LowerECAM_APU.css.map */
